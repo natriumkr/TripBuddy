@@ -138,8 +138,9 @@ body {
 
 .footer{
   background-color:black;
-  padding: 8px auto;
-  padding-top: 8px auto;
+  display: flex;
+  box-shadow: 0 1px 0px rgba(0,0,0,0.1);
+  padding: 8px 20px;
   color:white;
   align-items: center;
 }
