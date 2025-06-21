@@ -1,8 +1,3 @@
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Loading…</title>
-
 function changeLanguage(lang) {
     if (lang === "ko") {
       window.location.href = "pages/ko/index.html";
