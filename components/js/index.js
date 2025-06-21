@@ -1,3 +1,8 @@
+$(function() {
+  $("#header").load("../html/header.html")
+});
+
+
 function changeLanguage(lang) {
     if (lang === "ko") {
       window.location.href = "../../pages/ko/index.html";
