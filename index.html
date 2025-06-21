@@ -1,76 +1,29 @@
+<!-- /index.html -->
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="title"></title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <title>Loading…</title>
+  <script>
+    // 1. 브라우저 언어 우선순위 읽기
+    const lang = navigator.language || navigator.userLanguage;
+    // 2. 한국어 계열이면 /ko, 영어 계열이면 /en, 기타는 /jp
+    const target =
+      lang.startsWith('ko') ? 'pages/ko/' :
+      lang.startsWith('en') ? 'pages/en/' :
+      lang.startsWith('cn') ? 'pages/cn/' :
+      lang.startsWith('jp') ? 'pages/jp/' :
+      lang.startsWith('ru') ? 'pages/ru/' :
+      lang.startsWith('ar') ? 'pages/ar/' :
+      'pages/ko/';
+    // 3. 쿼리나 해시(#)가 있다면 유지
+    const extra = location.search + location.hash;
+    location.replace(`${target}index.html${extra}`);
+  </script>
 </head>
 <body>
-  <!-- 헤더 -->
-  <header class="preheader">
-    <nav class="nav">
-      <a href="#" id="events"></a>
-      <select id="languageSelector" type="languageSelector">
-        <option value="ko">한국어</option>
-        <option value="en">English</option>
-      </select>
-    </nav>
-  </header>
-  <header class="header">
-    <h1 class="logo" href="#">TripBuddy</h1>
-    <nav class="nav">
-      <a href="planning.html" id="header1"></a>
-      <a href="#" id="header2"></a>
-    </nav>
-  </header>
-
-  <!-- 검색 섹션 -->
-  <section class="search-section">
-    <div class="container">
-      <h2 id="search_section1"></h2>
-      <div class="search-box">
-        <input type="date" />
-        <input type="date" />
-        <input type="number" placeholder="(13+)" />
-        <input type="number"placeholder="(~12)" />
-        <button type="search">START</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- 인기 여행지 -->
-  <section class="popular-destinations">
-    <div class="container">
-      <h2>추천 여행 플랜</h2>
-      <div class="destinations-grid">
-        <div class="card">
-          <div class="card-content">
-            <h3 id="plan1"></h3>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h3 id='plan2'></h3>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h3 id='plan3'></h3>
-          </div>
-        </div>
-        <!-- 더 추가 가능 -->
-    </div>
-  </section>
-
-
-        <!-- 더 추가 가능 -->
-      </div>
-    </div>
-  </section>
-  <script src="lang-data.js"></script>
-  <script src="script.js"></script>
-  
-
+  <noscript>
+    <p>Please select a language: <a href="pages/ko/">한국어</a> | <a href="pages/en/">English</a> | <a href="pages/jp/">日本語</a></p>
+  </noscript>
 </body>
 </html>
