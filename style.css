@@ -135,15 +135,3 @@ body {
   background: white;
   border-radius: 8px;
 }
-
-.footer{
-  background-color:black;
-  margin: 0;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  box-shadow: 0 1px 0px rgba(0,0,0,0.1);
-  padding: 20px;
-  color:white;
-  align-items: center;
-}
