@@ -8,7 +8,26 @@
 </head>
 <body>
   <!-- 헤더 -->
-  <header id="header"></header>
+<header class="preheader">
+    <nav class="nav">
+        <a href="#" id="events">이벤트</a>
+        <select id="languageSelector" type="languageSelector" onchange="changeLanguage(this.value)">
+        <option value="ko">한국어/Korean</option>
+        <option value="en">English</option>
+        <option value="cn">中国语/Chinese</option>
+        <option value="jp">日本語/Japanese</option>
+        <option value="ru">Ρусский/Russian</option>
+        <option value="ar">عربي/Arabic</option>
+        </select>
+    </nav>
+</header>
+    <header class="header">
+    <h1 class="logo" href="#">TripBuddy</h1>
+    <nav class="nav">
+        <a href="planning.html">여행계획 제작하기</a>
+        <a href="#">로그인</a>
+    </nav>
+</header>
   <!-- 검색 섹션 -->
   <section class="search-section">
     <div class="container">
