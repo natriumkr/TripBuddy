@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="title">TripBuddy | Составьте свой собственный план путешествий!</title>
+  <link rel="stylesheet" href="../../components/css/index.css" />
+</head>
+<body>
+  <!-- 헤더 -->
+<header class="preheader">
+    <nav class="nav">
+        <a href="#" id="events">События</a>
+        <select id="languageSelector" type="languageSelector" onchange="changeLanguage(this.value)">
+        <option value="ru">Ρусский/Russian</option>
+        <option value="ko">한국어/Korean</option>
+        <option value="en">English</option>
+        <option value="cn">中国语/Chinese</option>
+        <option value="jp">日本語/Japanese</option>
+        <option value="ar">عربي/Arabic</option>
+        </select>
+    </nav>
+</header>
+    <header class="header">
+    <h1 class="logo" href="#">TripBuddy</h1>
+    <nav class="nav">
+        <a href="planning.html">여행계획 제작하기</a>
+        <a href="#">로그인</a>
+    </nav>
+</header>
+  <!-- 검색 섹션 -->
+  <section class="search-section">
+    <div class="container">
+      <h2 id="search_section1"></h2>
+      <div class="search-box">
+        <input type="date" />
+        <input type="date" />
+        <input type="number" placeholder="(13+)" />
+        <input type="number"placeholder="(~12)" />
+        <button type="search">시작하기</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 인기 여행지 -->
+  <section class="popular-destinations">
+    <div class="container">
+      <h2>추천 여행 플랜</h2>
+      <div class="destinations-grid">
+        <div class="card">
+          <div class="card-content">
+            <h3 id="plan1"></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 id='plan2'></h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 id='plan3'></h3>
+          </div>
+        </div>
+        <!-- 더 추가 가능 -->
+    </div>
+  </section>
+
+
+        <!-- 더 추가 가능 -->
+      </div>
+    </div>
+  </section>
+  <script src="../../components/js/index.js"></script>
+  
+
+</body>
+</html>
