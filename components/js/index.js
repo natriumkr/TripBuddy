@@ -15,3 +15,29 @@ function changeLanguage(lang) {
       window.location.href = "index.html";
     }
   }
+
+
+  const recommendedPlans = [
+  {
+    name: "서울",
+    imageUrl: ""
+  },
+  {
+    name: "부산",
+    imageUrl: ""
+  },
+  {
+    name: "제주도",
+    imageUrl: ""
+  }
+];
+
+recommendedPlans.forEach((plan, index) => {
+  const card = document.querySelectorAll(".destinations-grid .card")[index];
+  if(card) {
+    card.innerHTML = `
+      <img src="${plan.imageUrl}" alt="${plan.name}" style="width:100%; height:auto; border-radius: 8px;" />
+      <h3>${plan.name}</h3>
+    `;
+  }
+});
