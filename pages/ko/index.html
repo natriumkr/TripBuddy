@@ -33,11 +33,9 @@
     <div class="container">
       <h2 id="search_section1"></h2>
       <div class="search-box">
-        <input type="date" placeholder="출발 날짜" />
-        <input type="date" placeholder="도착 날짜" />
-        <input type="number" placeholder="성인 (13+)" />
-        <input type="number"placeholder="유아 (~12)" />
-        <button type="search">시작하기</button>
+        <label for="q" class="sr-only">검색어</label>
+        <input id="q" name="q" type="search" placeholder="여행지를 입력하세요" required />
+        <button type="submit">검색</button>
       </div>
     </div>
   </section>
