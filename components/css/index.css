@@ -82,17 +82,8 @@ body {
   margin: 0 auto;
 }
 
-.search-box input[type="text"],
-.search-box input[type="date"] {
+.search-box input[type="search"] {
   flex: 1 0 300px;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-}
-
-.search-box input[type="number"] {
-  flex: 1 0 150px;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ddd;
